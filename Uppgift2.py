@@ -1,14 +1,12 @@
 # Programmeringsteknik webbkurs KTH inlämningsuppgift 2.
-# Robin CHowdhury
+# Robin Cowdhury
 # 2014-08-05
 # Gör om 4 meningar till en rondelet
-
-
 
 # Skriver ut välkomsttexten
 def writeWelcomeText():
 	print("DIKTOMATEN")
-
+	print()
 
 # Läser in de 4 meningarna
 def getInputs():
@@ -19,7 +17,7 @@ def getInputs():
 	sentence.append(input("Skriv mening nr 4: "))
 
 
-# Förbestämmda meningar för testning
+# Förbestämda meningar för testning
 def testInput():
 	sentence.append("Det fanns ingen fil när jag handlade på Konsum.")
 	sentence.append("Bananerna var också slut.")
@@ -39,7 +37,6 @@ def printPoem():
 	print(sentence[2])	# mening 3
 	print(sentence[3])	# mening 4
 	print(fourFirstWords)
-
 
 # Huvudprogrammet
 sentence = []	
