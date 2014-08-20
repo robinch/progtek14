@@ -1,4 +1,4 @@
-import random
+import random, sys
 
 # Programmeringsteknik webbkurs KTH inlämningsuppgift 3.
 # Robin Chowdhury
@@ -87,8 +87,11 @@ while(True):
 	print("Vilken attraktion vill du åka?")
 	for i in range(len(rides)):
 		print(rides[i], "[" + str(i) + "]", end = "     ")
-	print()
-	ride = int(input())
+	print("Avsluta [q]")
+	ride = input()
+	if(ride == "q"):
+		sys.exit(9)
+	ride = int(ride)
 	if(ride < len(rides)	):
 		rides[ride].printCommercial()
 		choice = input("[y/n]")
